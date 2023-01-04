@@ -1,0 +1,13 @@
+{
+  "name": "Livraria-API",
+  "version": "1.0.0",
+  "description": "Api para adminitrar Livraria",
+  "main": "server.js",
+  "repository": "https://github.com/LuthGom/Livraria-API.git",
+  "author": "LuthGom <lucianomendes23@yahoo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.8.2"
+  }
+}
