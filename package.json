@@ -1,20 +1,27 @@
 {
   "name": "livraria-api",
   "version": "1.0.0",
-  "description": "Api para adminitrar Livraria",
-  "main": "server.js",
+  "description": "Api para Livraria",
+  "main": "dist/server.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "node .",
+    "debug": "ts-node-dev --respawn --transpile-only src/server.ts"
+  },
   "repository": "https://github.com/LuthGom/Livraria-API.git",
   "author": "LuthGom <lucianomendes23@yahoo.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2",
-    "mongoose": "^6.8.2"
+    "express": "^4.18.2"
   },
   "devDependencies": {
     "@types/express": "^4.17.15",
     "@types/mongoose": "^5.11.97",
-    "@types/node": "^18.11.18",
-    "nodemon": "^2.0.20",
-    "ts-node": "^10.9.1"
+    "@types/sequelize": "^4.28.14",
+    "mongoose": "^6.8.2",
+    "sequelize": "^6.28.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4"
   }
 }
