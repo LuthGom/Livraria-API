@@ -3,7 +3,26 @@
   "version": "1.0.0",
   "description": "api para gerenciament de uma livraria",
   "main": "server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./build/server.js",
+    "dev": "ts-node-dev --respawn --transpile-only ./src/server.ts"
+  },
   "repository": "https://github.com/LuthGom/Livraria-API.git",
   "author": "LuthGom <lucianomendes23@yahoo.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.15",
+    "@types/mongoose": "^5.11.97",
+    "dotenv": "^16.0.3",
+    "mongoose": "^6.8.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4"
+  }
 }
