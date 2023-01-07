@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const { Schema } = mongoose;
 
 const autorSchema = new Schema({
-  nome: String,
+  nome: { type: String, required: true },
   genero: String,
   origem: String,
 });
