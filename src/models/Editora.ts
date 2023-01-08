@@ -8,4 +8,4 @@ const editoraSchema = new Schema({
   cnpj: String,
 });
 
-export const Editora = mongoose.model("editora", editoraSchema);
+export const Editora = mongoose.model("publisher", editoraSchema);

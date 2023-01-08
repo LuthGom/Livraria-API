@@ -1,6 +1,11 @@
 import mongoose from "mongoose";
 
+
+
 const { Schema } = mongoose;
+
+
+
 
 const livroSchema = new Schema({
   titulo: { type: String, required: true },
@@ -12,4 +17,4 @@ const livroSchema = new Schema({
   generoLiterario: String,
 });
 
-export const Livro = mongoose.model("livro", livroSchema);
+export const Livro = mongoose.model("books", livroSchema);
