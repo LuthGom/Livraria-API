@@ -1,13 +1,9 @@
 import mongoose from "mongoose";
-
-
+import { ILivro } from "../interfaces/modelsInterfaces";
 
 const { Schema } = mongoose;
 
-
-
-
-const livroSchema = new Schema({
+const livroSchema = new Schema<ILivro>({
   titulo: { type: String, required: true },
   autor: { type: mongoose.Types.ObjectId, ref: "autor", required: true },
   editora: { type: mongoose.Types.ObjectId, ref: "editora", required: true },
