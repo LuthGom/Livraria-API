@@ -1,8 +1,9 @@
 import mongoose from "mongoose";
+import { IAdmin } from "../interfaces/modelsInterfaces";
 
 const { Schema } = mongoose;
 
-const adminSchema = new Schema({
+const adminSchema = new Schema<IAdmin>({
   nome: String,
   usuario_admin: String,
   senha: String,
