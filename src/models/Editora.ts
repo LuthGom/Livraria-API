@@ -1,8 +1,9 @@
 import mongoose, { mongo } from "mongoose";
+import { IEditora } from "../interfaces/modelsInterfaces";
 
 const { Schema } = mongoose;
 
-const editoraSchema = new Schema({
+const editoraSchema = new Schema<IEditora>({
   nome: String,
   cidade: String,
   cnpj: String,
