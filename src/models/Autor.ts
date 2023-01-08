@@ -1,11 +1,6 @@
 import mongoose, { Types } from "mongoose";
+import { IAutor } from "../interfaces/modelsInterfaces";
 
-interface IAutor {
-  id: String;
-  nome: String;
-  genero: String;
-  origem: String;
-}
 
 const { Schema } = mongoose;
 
