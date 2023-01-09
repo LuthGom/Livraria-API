@@ -1,4 +1,7 @@
 import mongoose from "mongoose";
+
+mongoose.set("strictQuery", true);
+mongoose.set("strictPopulate", false);
 const url = process.env.MONGO_URL;
 const db = mongoose.connect(url);
 
