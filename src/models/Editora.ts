@@ -4,9 +4,9 @@ import { IEditora } from "../interfaces/modelsInterfaces";
 const { Schema } = mongoose;
 
 const editoraSchema = new Schema<IEditora>({
-  nome: String,
+  nome: { type: String, required: true },
   cidade: String,
-  cnpj: String,
+  cnpj: { type: String, required: true },
 });
 
 export const Editora = mongoose.model("publisher", editoraSchema);
